@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    @model PetActivityTrackerMVC.Models.Users   
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Pet Activity Tacker</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@using (Html.BeginForm())
+{
+    <div class="text-center">
+        <label>Username</label><br />
+        @Html.EditorFor(model => model.UserName)<br />
+        @Html.ValidationMessageFor(model => model.UserName)<br />
+
+        <label>Password</label><br />
+        @Html.EditorFor(model => model.Password)<br />
+        @Html.ValidationMessageFor(model => model.Password)<br />
+
+        <input type="submit" value="Login" class="btn btn-primary" />
+    </div>
+}
