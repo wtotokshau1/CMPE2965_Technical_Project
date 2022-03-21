@@ -24,3 +24,14 @@ C:\Users\wtoto\Desktop\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\re
 C:\Users\wtoto\Desktop\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.pdb
 C:\Users\wtoto\Desktop\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.genruntimeconfig.cache
 C:\Users\wtoto\Desktop\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\ref\PetActivityTracker.dll
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.csproj.AssemblyReference.cache
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.AssemblyInfoInputs.cache
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.AssemblyInfo.cs
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.csproj.CoreCompileInputs.cache
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.RazorAssemblyInfo.cache
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.RazorAssemblyInfo.cs
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.dll
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\ref\PetActivityTracker.dll
+C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net6.0\PetActivityTracker.pdb

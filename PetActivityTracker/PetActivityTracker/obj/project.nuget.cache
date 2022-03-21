@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "giZyQzhf/NNYM6JIg9rRqg7zGEn7G6FSE74gj6+d/ZuqBErZP9aTt8KJMT90rsuqbN783Tsh/IW14kDBD/sAMQ==",
+  "dgSpecHash": "H6aIYlBiGWt2R9Jjc674nXL7wLepiPublKUKBsWU6D9NYV7Tyzltx5mqQIRV3FOf228B0uAdTPYv2xd8W3DThg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wtoto\\Desktop\\PetActivityTracker\\PetActivityTracker\\PetActivityTracker.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\wtoto\\Documents\\GitHub\\CMPE2965_TechnicalProject\\PetActivityTracker\\PetActivityTracker\\PetActivityTracker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wtoto\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+  ],
   "logs": []
 }
