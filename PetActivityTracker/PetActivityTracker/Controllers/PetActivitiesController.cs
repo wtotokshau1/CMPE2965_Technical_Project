@@ -20,9 +20,10 @@ namespace PetActivityTracker.Models
         }
 
         // GET: PetActivities
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            return View(await _context.PetActivity.ToListAsync());
+            var activities = _context.PetActivity.Where(pa => pa.PetId == id);
+            return View(await activities.ToListAsync());
         }
 
         // GET: PetActivities/Details/5

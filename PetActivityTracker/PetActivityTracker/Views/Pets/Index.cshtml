@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<PetActivityTracker.Models.Pet>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Pets";
 }
 
-<h1>Index</h1>
+<h1>Pets</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -12,9 +12,6 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UserId)
-            </th>
             <th>
                 @Html.DisplayNameFor(model => model.PetName)
             </th>
@@ -31,9 +28,6 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.UserId)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.PetName)
             </td>
             <td>
@@ -44,7 +38,7 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.PetId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PetId">Details</a> |
+                <a asp-controller="PetActivities" asp-action="Index" asp-route-id="@item.PetId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.PetId">Delete</a>
             </td>
         </tr>

@@ -1,6 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    @model PetActivityTracker.Models.User   
+    @model PetActivityTracker.Models.User
 }
 <div class="text-center">
     <h1 class="display-4">Welcome to the Pet Activity Tacker</h1>
@@ -12,12 +12,13 @@
     <div class="text-center">
         <label>Username</label><br />
         @Html.EditorFor(model => model.UserName)<br />
-        @Html.ValidationMessageFor(model => model.UserName)<br />
+        @Html.ValidationMessageFor(model => model.UserName, "", new { @style="color:red" })<br />
 
         <label>Password</label><br />
         @Html.EditorFor(model => model.Password)<br />
-        @Html.ValidationMessageFor(model => model.Password)<br />
+        @Html.ValidationMessageFor(model => model.Password, "", new { @style="color:red" })<br />
 
+        <label style="color:red">@ViewBag.Message</label><br />
         <input type="submit" value="Login" class="btn btn-primary" />
     </div>
 }

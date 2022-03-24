@@ -4,32 +4,28 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Edit Pet</h1>
 
-<h4>Pet</h4>
+<h4>@Model.PetName</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="PetId" />
+            
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" />
-                <span asp-validation-for="UserId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PetName" class="control-label"></label>
+                <label asp-for="PetName" class="control-label">Pet Name</label>
                 <input asp-for="PetName" class="form-control" />
                 <span asp-validation-for="PetName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FoodConsumption" class="control-label"></label>
+                <label asp-for="FoodConsumption" class="control-label">Average Food Consumption</label>
                 <input asp-for="FoodConsumption" class="form-control" />
                 <span asp-validation-for="FoodConsumption" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WaterConsumption" class="control-label"></label>
+                <label asp-for="WaterConsumption" class="control-label">Average Water Consumption</label>
                 <input asp-for="WaterConsumption" class="form-control" />
                 <span asp-validation-for="WaterConsumption" class="text-danger"></span>
             </div>
@@ -41,7 +37,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back</a>
 </div>
 
 @section Scripts {
