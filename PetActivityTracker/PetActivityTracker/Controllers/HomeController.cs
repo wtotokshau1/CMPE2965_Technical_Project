@@ -1,16 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PetActivityTracker.Models;
 using System.Diagnostics;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using PetActivityTracker.Data;
 
 namespace PetActivityTracker.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly PetActivityTrackerContext _context;
+
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, PetActivityTrackerContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -19,10 +29,12 @@ namespace PetActivityTracker.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(Users user)
+        public async Task<IActionResult> Index(User user)
         {
-            if (user.UserName == "Warren" && user.Password == "Password")
-                return View("~/Views/PetDetails/Index.cshtml");
+            var myUser = await _context.Users.FirstOrDefaultAsync(x => x.UserName == user.UserName && x.Password == user.Password);
+            
+            if (myUser != null)
+                return View();
             else
                 return View();
         }

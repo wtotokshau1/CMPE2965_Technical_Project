@@ -1,8 +1,0 @@
-C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net5.0\PetActivityTracker.csproj.AssemblyReference.cache
-C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net5.0\PetActivityTracker.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net5.0\PetActivityTracker.AssemblyInfoInputs.cache
-C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net5.0\PetActivityTracker.AssemblyInfo.cs
-C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net5.0\PetActivityTracker.csproj.CoreCompileInputs.cache
-C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net5.0\PetActivityTracker.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net5.0\PetActivityTracker.RazorAssemblyInfo.cache
-C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\obj\Debug\net5.0\PetActivityTracker.RazorAssemblyInfo.cs

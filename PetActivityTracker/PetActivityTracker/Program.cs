@@ -1,4 +1,10 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using PetActivityTracker.Data;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<PetActivityTrackerContext>(options =>
+    options.UseSqlServer("workstation id=PetActivityTracker.mssql.somee.com;packet size=4096;user id=wtotokshau_SQLLogin_1;pwd=xfr2k1v5yz;data source=PetActivityTracker.mssql.somee.com;persist security info=False;initial catalog=PetActivityTracker"));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
