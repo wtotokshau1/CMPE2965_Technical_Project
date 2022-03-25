@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PetActivityTracker.Data;
 using PetActivityTracker.Models;
+using System.Web;
 
 namespace PetActivityTracker.Controllers
 {
@@ -34,11 +35,10 @@ namespace PetActivityTracker.Controllers
         {
             var myUser = await _context.Users.FirstOrDefaultAsync(x => x.UserName == user.UserName && x.Password == user.Password);
             var model =  _context.Pet;
-
             if (myUser != null)
             {
-                TempData["UserID"] = myUser.UserId;
-                return RedirectToAction("Index", "Pets");
+                TempData["UserId"] = myUser.UserId;
+                return RedirectToAction("Index", "Pets", new {id = myUser.UserId });
             }
             else
             {

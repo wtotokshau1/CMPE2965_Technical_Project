@@ -21,10 +21,15 @@ namespace PetActivityTracker.Controllers
         }
 
         // GET: Pets
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            var pets = from p in _context.Pet select p;
-            return View(await pets.Where(x => x.UserId == (TempData["UserID"] as int?)).ToListAsync());
+            if (id != null)
+            {
+                return View(await _context.Pet.Where(x => x.UserId == id).ToListAsync());
+            }
+            else return View();
+            //var pets = from p in _context.Pet select p;
+            //return View(await pets.Where(x => x.UserId == (TempData["UserID"] as int?)).ToListAsync());
         }
 
         // GET: Pets/Details/5
