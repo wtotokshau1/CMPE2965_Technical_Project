@@ -20,6 +20,28 @@ namespace PetActivityTracker.Controllers
             _context = context;
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Login(User userInput)
+        {
+            var myUser = await _context.Users.FirstOrDefaultAsync(x => x.UserName == userInput.UserName && x.Password == userInput.Password);
+            if (myUser != null)
+            {
+                HttpContext.Session.SetInt32("UserId", myUser.UserId);
+                return RedirectToAction("Index", "Pets", new { id = myUser.UserId });
+            }
+            else
+            {
+                TempData["Message"] = "Invalid Credentials!";
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            HttpContext.Session.Remove("UserId");            
+            return RedirectToAction("Index", "Home");
+        }
+
         // GET: Users
         public async Task<IActionResult> Index()
         {

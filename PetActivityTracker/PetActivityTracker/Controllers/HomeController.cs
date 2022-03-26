@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PetActivityTracker.Data;
 using PetActivityTracker.Models;
-using System.Web;
 
 namespace PetActivityTracker.Controllers
 {
@@ -27,24 +26,11 @@ namespace PetActivityTracker.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Index(User user)
-        {
-            var myUser = await _context.Users.FirstOrDefaultAsync(x => x.UserName == user.UserName && x.Password == user.Password);
-            var model =  _context.Pet;
-            if (myUser != null)
+            if (HttpContext.Session.GetInt32("UserId") == null)
             {
-                TempData["UserId"] = myUser.UserId;
-                return RedirectToAction("Index", "Pets", new {id = myUser.UserId });
-            }
-            else
-            {
-                ViewBag.Message = "Invalid Credentials!";
                 return View();
             }
+            else return RedirectToAction("Index", "Pets", new { id = HttpContext.Session.GetInt32("UserId") });
         }
 
         public IActionResult Privacy()

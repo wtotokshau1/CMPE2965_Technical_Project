@@ -27,7 +27,7 @@ namespace PetActivityTracker.Controllers
             {
                 return View(await _context.Pet.Where(x => x.UserId == id).ToListAsync());
             }
-            else return View();
+            else return RedirectToAction("Index", "Home");
             //var pets = from p in _context.Pet select p;
             //return View(await pets.Where(x => x.UserId == (TempData["UserID"] as int?)).ToListAsync());
         }

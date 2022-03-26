@@ -7,7 +7,7 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Login", "Users"))
 {
     <div class="text-center">
         <label>Username</label><br />
@@ -18,7 +18,7 @@
         @Html.EditorFor(model => model.Password)<br />
         @Html.ValidationMessageFor(model => model.Password, "", new { @style="color:red" })<br />
 
-        <label style="color:red">@ViewBag.Message</label><br />
+        <label style="color:red">@TempData["Message"]</label><br />
         <input type="submit" value="Login" class="btn btn-primary" />
     </div>
 }

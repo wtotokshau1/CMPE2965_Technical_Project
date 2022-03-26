@@ -9454,23 +9454,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wtoto\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Warren\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wtoto\\Documents\\GitHub\\CMPE2965_TechnicalProject\\PetActivityTracker\\PetActivityTracker\\PetActivityTracker.csproj",
+      "projectUniqueName": "E:\\GitHub\\CMPE2965_Technical_Project\\PetActivityTracker\\PetActivityTracker\\PetActivityTracker.csproj",
       "projectName": "PetActivityTracker",
-      "projectPath": "C:\\Users\\wtoto\\Documents\\GitHub\\CMPE2965_TechnicalProject\\PetActivityTracker\\PetActivityTracker\\PetActivityTracker.csproj",
-      "packagesPath": "C:\\Users\\wtoto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wtoto\\Documents\\GitHub\\CMPE2965_TechnicalProject\\PetActivityTracker\\PetActivityTracker\\obj\\",
+      "projectPath": "E:\\GitHub\\CMPE2965_Technical_Project\\PetActivityTracker\\PetActivityTracker\\PetActivityTracker.csproj",
+      "packagesPath": "C:\\Users\\Warren\\.nuget\\packages\\",
+      "outputPath": "E:\\GitHub\\CMPE2965_Technical_Project\\PetActivityTracker\\PetActivityTracker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\wtoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Warren\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
