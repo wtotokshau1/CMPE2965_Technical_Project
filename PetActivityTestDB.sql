@@ -29,8 +29,8 @@ CREATE TABLE PetActivity(
 	PetActivityID int NOT NULL IDENTITY,
 	PetID int NOT NULL,
 	Activity varchar(50) NOT NULL,
-	StartTime date NOT NULL,
-	EndTime date NOT NULL,
+	StartTime datetime NOT NULL,
+	EndTime datetime NOT NULL,
 	Consumption float NOT NULL,
 	CONSTRAINT PK_PetActivity PRIMARY KEY (PetActivityID),	
 	CONSTRAINT FK_PetActivity_Pet FOREIGN KEY (PetID) REFERENCES Pet(PetID)
@@ -44,17 +44,42 @@ VALUES
 ('JDoe01', 'ILoveDigs321')
 GO
 
---Populate Pet Table
+--	Populate Pet Table
 INSERT INTO Pet
 VALUES
 (1, 'Doggo', 75, 75),
 (1, 'Catto', 50, 75),
-(2, 'Mr.Meowers', 60, 70)
+(2, 'Small cat', 50, 60),
+(2, 'Big cat', 65, 75)
 GO
 
---Populate Pet Activity Table
+--	Populate Pet Activity Table
 INSERT INTO PetActivity
 VALUES
-(1, 'Food', GETDATE(), GETDATE(), 72),
-(2, 'Water', GETDATE(), GETDATE(), 55)
+--	Pet Number one : Doggo
+(1, 'Food', '20220318 06:34:09 AM', '20220318 06:35:09 AM', 72),
+(1, 'Water', '20220318 06:34:09 AM', '20220318 06:35:09 AM', 72),
+(1, 'Food', '20220318 12:34:09 AM', '20220318 12:35:09 AM', 72),
+(1, 'Water', '20220318 12:34:09 AM', '20220318 12:35:09 AM', 72),
+(1, 'Food', '20220318 07:34:09 AM', '20220318 07:35:09 AM', 72),
+(1, 'Food', '20220318 06:34:09 AM', '20220318 06:35:09 AM', 72),
+--	Pet Number Two : Catto
+(2, 'Water', '20220318 06:34:09 AM', '20220318 06:35:09 AM', 72),
+(2, 'Food', '20220318 12:34:09 AM', '20220318 12:35:09 AM', 72),
+(2, 'Water', '20220318 12:34:09 AM', '20220318 12:35:09 AM', 72),
+(2, 'Food', '20220318 07:34:09 AM', '20220318 07:35:09 AM', 72),
+(2, 'Water', '20220318 07:34:09 AM', '20220318 07:35:09 AM', 72),
+--	Pet Number Three : Small cat
+(3, 'Water', '20220318 06:34:09 AM', '20220318 06:35:09 AM', 72),
+(3, 'Food', '20220318 12:34:09 AM', '20220318 12:35:09 AM', 72),
+(3, 'Water', '20220318 12:34:09 AM', '20220318 12:35:09 AM', 72),
+(3, 'Food', '20220318 07:34:09 AM', '20220318 07:35:09 AM', 72),
+(3, 'Water', '20220318 07:34:09 AM', '20220318 07:35:09 AM', 72),
+--	Pet Number Four : Big cat
+(4, 'Water', '20220318 06:34:09 AM', '20220318 06:35:09 AM', 72),
+(4, 'Food', '20220318 12:34:09 AM', '20220318 12:35:09 AM', 72),
+(4, 'Water', '20220318 12:34:09 AM', '20220318 12:35:09 AM', 72),
+(4, 'Food', '20220318 07:34:09 AM', '20220318 07:35:09 AM', 72),
+(4, 'Water', '20220318 07:34:09 AM', '20220318 07:35:09 AM', 72),
+(4, 'Water', GETDATE(), GETDATE(), 55)
 GO
