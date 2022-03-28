@@ -23,6 +23,7 @@ namespace PetActivityTracker.Models
         public async Task<IActionResult> Index(int? id)
         {
             var activities = _context.PetActivity.Where(pa => pa.PetId == id);
+            TempData["Pet"] = await _context.Pet.FirstOrDefaultAsync(pet=>pet.PetId==id);
             return View(await activities.ToListAsync());
         }
 

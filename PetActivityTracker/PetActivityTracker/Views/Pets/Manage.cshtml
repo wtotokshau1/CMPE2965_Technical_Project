@@ -1,0 +1,32 @@
+﻿@model IEnumerable<PetActivityTracker.Models.Pet>
+
+@{
+    ViewData["Title"] = "My Pets";
+}
+
+<h1>My Pets</h1>
+
+<hr />
+<p>
+    <a asp-action="Create">Add Pet</a>
+</p>
+@foreach(var item in Model)
+{    
+    <h2>@Html.DisplayFor(modelItem => item.PetName)</h2>
+    <a asp-action="Edit" asp-route-id="@item.PetId">Edit</a><br />
+    <span>Average Water Consumption : 
+        @Html.DisplayFor(modelItem => item.WaterConsumption)
+    </span><br />
+       <span>Average Food Consumption : 
+        @Html.DisplayFor(modelItem => item.FoodConsumption)
+    </span><br />
+<br />
+}
+
+<div>
+    <a asp-action="Index">Back</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -6,9 +6,6 @@
 
 <h1>Pets</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -37,7 +34,6 @@
                 @Html.DisplayFor(modelItem => item.WaterConsumption)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.PetId">Edit</a> |
                 <a asp-controller="PetActivities" asp-action="Index" asp-route-id="@item.PetId">Activities</a>
             </td>
         </tr>

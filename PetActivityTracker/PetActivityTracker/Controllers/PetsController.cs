@@ -28,8 +28,7 @@ namespace PetActivityTracker.Controllers
                 return View(await _context.Pet.Where(x => x.UserId == id).ToListAsync());
             }
             else return RedirectToAction("Index", "Home");
-            //var pets = from p in _context.Pet select p;
-            //return View(await pets.Where(x => x.UserId == (TempData["UserID"] as int?)).ToListAsync());
+            
         }
 
         // GET: Pets/Details/5
@@ -88,6 +87,14 @@ namespace PetActivityTracker.Controllers
             return View(pet);
         }
 
+        public async Task<IActionResult> Manage()
+        {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+            var model = _context.Pet.Where(Pet => Pet.UserId == userId);
+            return View("Manage", model);
+            
+        }
+
         // POST: Pets/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -95,6 +102,7 @@ namespace PetActivityTracker.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("PetId,UserId,PetName,FoodConsumption,WaterConsumption")] Pet pet)
         {
+            pet.UserId = (int)HttpContext.Session.GetInt32("UserId");
             if (id != pet.PetId)
             {
                 return NotFound();
