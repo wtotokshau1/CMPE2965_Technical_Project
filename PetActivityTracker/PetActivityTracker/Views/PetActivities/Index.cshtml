@@ -2,11 +2,17 @@
 
 @{
     ViewData["Title"] = "Index";
-    PetActivityTracker.Models.Pet pet = (PetActivityTracker.Models.Pet)TempData["Pet"];
+    PetActivityTracker.Models.Pet pet = ViewBag.Pet;
+    DateTime? currentDay = @TempData["CurrentDate"] as DateTime?;
 }
 
 <h1>@pet.PetName's Activities</h1>
-
+<h2>@currentDay.Value.DayOfWeek @currentDay.Value.ToShortDateString()</h2>
+<hr />
+<span style="display: flex; justify-content: space-between">
+<a asp-controller="PetActivities" asp-action="DecrementDay" asp-route-id="@pet.PetId">Prev Day</a>
+<a asp-controller="PetActivities" asp-action="IncrementDay" asp-route-id="@pet.PetId">Next Day</a>
+</span>
 <table class="table">
     <thead>
         <tr>
@@ -32,7 +38,7 @@
                 @Html.DisplayFor(modelItem => item.Activity)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.StartTime)
+                @Html.DisplayFor(modelItem => item.StartTime.TimeOfDay)
             </td>
             <td>
                 @item.EndTime.Subtract(item.StartTime).TotalSeconds seconds
@@ -44,3 +50,28 @@
 }
     </tbody>
 </table>
+@{
+    int iAvgFoodForDay = pet.FoodConsumption;
+    int iAvgWaterForDay = pet.WaterConsumption;
+
+    double dTotalWater = Model.Where(p => p.Activity == "Water").Sum(x => x.Consumption);
+    double dTotalFood = Model.Where(p => p.Activity == "Food").Sum(x => x.Consumption);
+    //<p>
+    //    Total food eaten = @dTotalFood
+    //    Total Water drunk = @dTotalWater
+    //</p>
+
+    if(dTotalFood < iAvgFoodForDay)
+    {
+        <p style="background-color:red">
+            ALERT - Pet has not eaten enough food
+        </p>
+    }
+
+    if(dTotalWater < iAvgWaterForDay)
+    {
+        <p>
+            ALERT - Pet has not drunk enough water
+        </p>
+    }
+}

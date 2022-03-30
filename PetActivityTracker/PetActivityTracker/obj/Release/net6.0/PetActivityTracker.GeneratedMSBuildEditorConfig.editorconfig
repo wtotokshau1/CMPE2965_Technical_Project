@@ -1,0 +1,108 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PetActivityTracker
+build_property.RootNamespace = PetActivityTracker
+build_property.ProjectDir = C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\wtoto\Documents\GitHub\CMPE2965_TechnicalProject\PetActivityTracker\PetActivityTracker
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/PetActivities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0QWN0aXZpdGllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/PetActivities/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0QWN0aXZpdGllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/PetActivities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0QWN0aXZpdGllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/PetActivities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0QWN0aXZpdGllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/PetActivities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0QWN0aXZpdGllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Pets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Pets/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Pets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Pets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Pets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Pets/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0c1xNYW5hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wtoto/Documents/GitHub/CMPE2965_TechnicalProject/PetActivityTracker/PetActivityTracker/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2vkrmsjzbg
