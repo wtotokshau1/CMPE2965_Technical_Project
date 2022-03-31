@@ -13,65 +13,114 @@
 <a asp-controller="PetActivities" asp-action="DecrementDay" asp-route-id="@pet.PetId">Prev Day</a>
 <a asp-controller="PetActivities" asp-action="IncrementDay" asp-route-id="@pet.PetId">Next Day</a>
 </span>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Activity)
-            </th>
-            <th>
-                Start Time
-            </th>
-            <th>
-                Duration
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Consumption)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Activity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartTime.TimeOfDay)
-            </td>
-            <td>
-                @item.EndTime.Subtract(item.StartTime).TotalSeconds seconds
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Consumption) g
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+
 @{
-    int iAvgFoodForDay = pet.FoodConsumption;
-    int iAvgWaterForDay = pet.WaterConsumption;
+    double dAvgFoodForDay = pet.FoodConsumption;
+    double dAvgWaterForDay = pet.WaterConsumption;
 
     double dTotalWater = Model.Where(p => p.Activity == "Water").Sum(x => x.Consumption);
     double dTotalFood = Model.Where(p => p.Activity == "Food").Sum(x => x.Consumption);
-    //<p>
-    //    Total food eaten = @dTotalFood
-    //    Total Water drunk = @dTotalWater
-    //</p>
 
-    if(dTotalFood < iAvgFoodForDay)
-    {
-        <p style="background-color:red">
-            ALERT - Pet has not eaten enough food
-        </p>
-    }
+    bool bFoodAlert = dTotalFood < dAvgFoodForDay * 0.90 || dTotalFood > dAvgFoodForDay * 1.15;
+    bool bWaterAlert = dTotalWater < dAvgWaterForDay * 0.90 || dTotalWater > dAvgWaterForDay * 1.15;
+}
 
-    if(dTotalWater < iAvgWaterForDay)
-    {
-        <p>
-            ALERT - Pet has not drunk enough water
-        </p>
+@{
+    if(Model.Count() > 0)
+    {        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Activity)
+                    </th>
+                    <th>
+                        Start Time
+                    </th>
+                    <th>
+                        Duration
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Consumption)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+        @foreach (var item in Model) {
+                string style = "none";
+                if(bFoodAlert && item.Activity == "Food"
+                    || bWaterAlert && item.Activity == "Water")
+                {
+                    style = "Background-Color:Yellow";
+                }
+                <tr style=@style>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Activity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartTime.TimeOfDay)
+                    </td>
+                    <td>
+                        @item.EndTime.Subtract(item.StartTime).TotalSeconds seconds
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Consumption) g
+                    </td>
+                </tr>
+        }
+            </tbody>
+        </table>
+
+        if (bFoodAlert)
+        {
+            <h3 style="background-color:red">
+                WARNING
+            </h3>
+            if(dTotalFood < dAvgFoodForDay)
+            {
+                <p> 
+                    @pet.PetName may not have consumed enough food..<br>
+                    @pet.PetName seems to have consumed @dTotalFood grams of food 
+                    which is @(Math.Abs(dAvgFoodForDay - dTotalFood)) grams 
+                    or @(Math.Abs(Math.Round((dAvgFoodForDay - dTotalFood) * 100 / dAvgFoodForDay)))% less than usual
+                </p>
+            }
+            else if(dTotalFood > dAvgFoodForDay)
+            {
+                <p> 
+                    @pet.PetName may have consumed too much food..<br>
+                    @pet.PetName seems to have consumed @dTotalFood grams of food 
+                    which is @(Math.Abs(dAvgFoodForDay - dTotalFood)) grams 
+                    or @(Math.Abs(Math.Round((dAvgFoodForDay - dTotalFood) * 100 / dAvgFoodForDay)))% more than usual
+                </p>
+            }
+        }
+
+        if (bWaterAlert)
+        {       
+            <h3 style="background-color:red">
+                WARNING
+            </h3>
+            if(dTotalWater < dAvgWaterForDay)
+            {
+                <p> 
+                    @pet.PetName may not have consumed enough water..<br>
+                    @pet.PetName seems to have consumed @dTotalWater grams of water 
+                    which is @(Math.Abs(dAvgWaterForDay - dTotalWater)) grams 
+                    or @(Math.Abs(Math.Round(((double)dAvgWaterForDay - dTotalWater) * 100 / dAvgWaterForDay)))% less than usual
+                </p>
+            }
+            else if(dTotalWater > dAvgWaterForDay)
+            {
+                <p> 
+                    @pet.PetName may have consumed too much water..<br>
+                    @pet.PetName seems to have consumed @dTotalWater grams of water 
+                    which is @(Math.Abs(dAvgWaterForDay - dTotalWater)) grams 
+                    or @(Math.Abs(Math.Round(((double)dAvgWaterForDay - dTotalWater) * 100 / dAvgWaterForDay)))% more than usual
+                </p>
+            }
+        }
     }
 }
