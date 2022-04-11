@@ -6,9 +6,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwN1BDbHiKEKBzQ1cKnB40QAAAAACAAAAAAAQZgAAAAEAACAAAACNMRDG02r9eypy/4b6AKk7zYyU9WooqxphRT1SkzRAjAAAAAAOgAAAAAIAACAAAAAY5PDKFHQ750Feh+tD22xtBTnLHuRkeKQ4eGgRZMIkMCAAAADBYHeWqPqwmYZHkTDaGqS7bNiZ672WbnOAQ6oxuC7TrUAAAABHxuUaYz18QSosxcVxAXIkJbt+5Hf+5p2VHB2rcggUWfvPTjvmc9NRfe/qw936g4kyMiXXGdIsPAmBitw0iUUz</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwN1BDbHiKEKBzQ1cKnB40QAAAAACAAAAAAAQZgAAAAEAACAAAADXlxZdC191HG524WMZHviwXBPzCTFNEolrwuj5/y3FzAAAAAAOgAAAAAIAACAAAACN09Yo822gqLRy/e7QccYa3VK96LLSl7+2bLIuP0aJISAAAAARTf64zlVLv92zbJXkY+KmdUb8Bzle7+5+LW7zintUB0AAAADVRXQiNb/TblgsNWJ53FVHEOWWoKGf7TXrub/v6H9I/8RMIlNxFrKfMJiYAvn9TIs+nvcTgASrhamZZPE+XtDt</EncryptedPassword>
     <_PublishTargetUrl>ftp://PetActivityTracker.somee.com/www.PetActivityTracker.somee.com</_PublishTargetUrl>
-    <History>False|2022-04-05T19:03:49.9009985Z;True|2022-03-28T13:13:02.3820190-06:00;</History>
+    <History>True|2022-04-11T14:35:16.5199046Z;False|2022-04-11T08:34:13.2520607-06:00;True|2022-04-05T13:19:52.7979893-06:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.Development.json">
@@ -429,19 +429,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/01/2021 14:48:16</publishTime>
     </File>
     <File Include="PetActivityTracker.deps.json">
-      <publishTime>03/28/2022 13:07:25</publishTime>
+      <publishTime>04/11/2022 08:34:47</publishTime>
     </File>
     <File Include="PetActivityTracker.dll">
-      <publishTime>03/28/2022 13:06:57</publishTime>
+      <publishTime>04/11/2022 08:34:46</publishTime>
     </File>
     <File Include="PetActivityTracker.exe">
-      <publishTime>03/28/2022 13:06:57</publishTime>
+      <publishTime>04/11/2022 08:34:46</publishTime>
     </File>
     <File Include="PetActivityTracker.pdb">
-      <publishTime>03/28/2022 13:06:57</publishTime>
+      <publishTime>04/11/2022 08:34:46</publishTime>
     </File>
     <File Include="PetActivityTracker.runtimeconfig.json">
-      <publishTime>03/28/2022 13:06:58</publishTime>
+      <publishTime>04/04/2022 10:25:12</publishTime>
     </File>
     <File Include="pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
       <publishTime>10/14/2021 12:43:18</publishTime>
@@ -666,7 +666,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2021 12:38:18</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>03/28/2022 13:07:26</publishTime>
+      <publishTime>04/11/2022 08:34:47</publishTime>
     </File>
     <File Include="wwwroot/css/site.css">
       <publishTime>03/21/2022 10:08:40</publishTime>

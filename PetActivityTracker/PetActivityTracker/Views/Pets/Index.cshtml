@@ -8,13 +8,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.PetName)
+                Name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FoodConsumption)
+                Average Food Consumption
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.WaterConsumption)
+                Average Water Consumption
             </th>
             <th></th>
         </tr>
@@ -26,10 +26,10 @@
                 @Html.DisplayFor(modelItem => item.PetName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FoodConsumption)
+                @Html.DisplayFor(modelItem => item.FoodConsumption) grams
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.WaterConsumption)
+                @Html.DisplayFor(modelItem => item.WaterConsumption) grams
             </td>
             <td>
                 <a asp-controller="PetActivities" asp-action="Index" asp-route-id="@item.PetId">Activities</a>

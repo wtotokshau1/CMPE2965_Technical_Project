@@ -64,11 +64,13 @@ namespace PetActivityTracker.Controllers
         {
             if (ModelState.IsValid)
             {
+                //int? i = (int)HttpContext.Session.GetInt32("UserId");
+                pet.UserId = (int)HttpContext.Session.GetInt32("UserId");
                 _context.Add(pet);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(pet);
+            return RedirectToAction("Index", "Pets", new { id = (int)HttpContext.Session.GetInt32("UserId") });
         }
 
         // GET: Pets/Edit/5

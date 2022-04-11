@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwN1BDbHiKEKBzQ1cKnB40QAAAAACAAAAAAAQZgAAAAEAACAAAAAUJUoVz5/MwH/TmniwKqd9zFSTFYliYOVGhTnK20dTcgAAAAAOgAAAAAIAACAAAADMJdemqd7gD1EsPJjqkz7ATIG1pvGg+ATQE5Mmzz+dTyAAAAB44MJamTzJuD1B5I/ZemTHrnmrEBPv/ZuhSWbX98l2BEAAAAANgxlGClDuIk0OpZH2CV/U/1Trd02V1ZHBBcD9RkJ/5TUWWxTKs1FoI9Yidv7+tWl97MpgNU4MFhq0PSjH5tCS</EncryptedPassword>
+    <_PublishTargetUrl>http://PetActivityTracker.somee.com</_PublishTargetUrl>
+    <History>False|2022-04-05T19:11:47.3623999Z;</History>
+  </PropertyGroup>
+</Project>
