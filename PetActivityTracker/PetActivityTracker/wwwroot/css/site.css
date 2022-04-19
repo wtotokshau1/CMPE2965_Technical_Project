@@ -11,8 +11,39 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  color:blue;
 }
 
 body {
   margin-bottom: 60px;
+}
+
+.container {
+    border-radius: 25px;
+    border: outset cornflowerblue;
+}
+
+#login_form{
+    border-radius:25px;
+    background-color:cornflowerblue;
+    margin:auto;
+
+    width:50%;
+    margin-left:25%;
+}
+header, footer{
+    background-color:cornflowerblue;
+}
+
+h1{
+    color:mediumslateblue;
+}
+
+h2{
+    color:mediumslateblue;
+}
+
+.btn{
+    margin-bottom:25px;
+    background-color:darkslateblue;
 }

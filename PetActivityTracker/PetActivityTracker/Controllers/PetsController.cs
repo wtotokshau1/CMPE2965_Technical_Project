@@ -156,6 +156,12 @@ namespace PetActivityTracker.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            foreach(var petActivity in _context.PetActivity.Where(pa=>pa.PetId == id))
+            {
+                _context.PetActivity.Remove(petActivity);
+            }
+
+            await _context.SaveChangesAsync();
             var pet = await _context.Pet.FindAsync(id);
             _context.Pet.Remove(pet);
             await _context.SaveChangesAsync();

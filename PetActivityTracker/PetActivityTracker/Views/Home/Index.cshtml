@@ -3,23 +3,28 @@
     @model PetActivityTracker.Models.User
 }
 <div class="text-center">
-    <h1 class="display-4">Welcome to the Pet Activity Tacker</h1>
-    <p>The Pet Activity Tracker aims to determine early signs of undiagnosed health issues with pets by tracking their eating and drinking habits.</a>.</p>
+    <h1 class="display-4">Welcome to the Pet Activity Tracker</h1>
+    <p>The Pet Activity Tracker aims to determine early signs of pets' undiagnosed health issues by tracking their eating and drinking habits remotely.</p>
     
 </div>
 
-@using (Html.BeginForm("Login", "Users"))
-{
-    <div class="text-center">
-        <label>Username</label><br />
-        @Html.EditorFor(model => model.UserName)<br />
-        @Html.ValidationMessageFor(model => model.UserName, "", new { @style="color:red" })<br />
+<div id="login_form">
+    <div>
+    @using (Html.BeginForm("Login", "Users"))
+    {
+        <div class="text-center">
+            <label>Username</label><br />
+            @Html.EditorFor(model => model.UserName)<br />
+            @Html.ValidationMessageFor(model => model.UserName, "", new { @style="color:red" })<br />
 
-        <label>Password</label><br />
-        @Html.EditorFor(model => model.Password)<br />
-        @Html.ValidationMessageFor(model => model.Password, "", new { @style="color:red" })<br />
+            <label>Password</label><br />
+            @Html.EditorFor(model => model.Password)<br />
+            @Html.ValidationMessageFor(model => model.Password, "", new { @style="color:red" })<br />
 
-        <label style="color:red">@TempData["Message"]</label><br />
-        <input type="submit" value="Login" class="btn btn-primary" />
+            <label style="color:red">@TempData["Message"]</label><br />
+            <input type="submit" value="Login" class="btn btn-primary" />
+        </div>
+    }
     </div>
-}
+</div>
+

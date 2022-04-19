@@ -8,7 +8,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwN1BDbHiKEKBzQ1cKnB40QAAAAACAAAAAAAQZgAAAAEAACAAAADXlxZdC191HG524WMZHviwXBPzCTFNEolrwuj5/y3FzAAAAAAOgAAAAAIAACAAAACN09Yo822gqLRy/e7QccYa3VK96LLSl7+2bLIuP0aJISAAAAARTf64zlVLv92zbJXkY+KmdUb8Bzle7+5+LW7zintUB0AAAADVRXQiNb/TblgsNWJ53FVHEOWWoKGf7TXrub/v6H9I/8RMIlNxFrKfMJiYAvn9TIs+nvcTgASrhamZZPE+XtDt</EncryptedPassword>
     <_PublishTargetUrl>ftp://PetActivityTracker.somee.com/www.PetActivityTracker.somee.com</_PublishTargetUrl>
-    <History>True|2022-04-11T14:35:16.5199046Z;False|2022-04-11T08:34:13.2520607-06:00;True|2022-04-05T13:19:52.7979893-06:00;</History>
+    <History>True|2022-04-19T18:49:12.7916189Z;True|2022-04-11T08:35:16.5199046-06:00;False|2022-04-11T08:34:13.2520607-06:00;True|2022-04-05T13:19:52.7979893-06:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.Development.json">
@@ -429,16 +429,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/01/2021 14:48:16</publishTime>
     </File>
     <File Include="PetActivityTracker.deps.json">
-      <publishTime>04/11/2022 08:34:47</publishTime>
+      <publishTime>04/19/2022 12:48:42</publishTime>
     </File>
     <File Include="PetActivityTracker.dll">
-      <publishTime>04/11/2022 08:34:46</publishTime>
+      <publishTime>04/19/2022 12:48:39</publishTime>
     </File>
     <File Include="PetActivityTracker.exe">
-      <publishTime>04/11/2022 08:34:46</publishTime>
+      <publishTime>04/19/2022 12:48:39</publishTime>
     </File>
     <File Include="PetActivityTracker.pdb">
-      <publishTime>04/11/2022 08:34:46</publishTime>
+      <publishTime>04/19/2022 12:48:39</publishTime>
     </File>
     <File Include="PetActivityTracker.runtimeconfig.json">
       <publishTime>04/04/2022 10:25:12</publishTime>
@@ -666,10 +666,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2021 12:38:18</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>04/11/2022 08:34:47</publishTime>
+      <publishTime>04/19/2022 12:48:42</publishTime>
     </File>
     <File Include="wwwroot/css/site.css">
-      <publishTime>03/21/2022 10:08:40</publishTime>
+      <publishTime>04/19/2022 12:45:30</publishTime>
     </File>
     <File Include="wwwroot/favicon.ico">
       <publishTime>03/21/2022 10:08:40</publishTime>
